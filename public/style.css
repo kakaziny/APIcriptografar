@@ -1,0 +1,115 @@
+/* Reset de estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: rgb(186, 205, 244);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: bounce 1s infinite alternate;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  color: #f0db4f;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s;
+}
+
+textarea:focus {
+  background: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+button {
+  background: #f0db4f;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.result-section {
+  margin-top: 20px;
+  border-top: 1px solid #f0db4f;
+  padding-top: 10px;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Animações de fundo */
+@keyframes backgroundAnimation {
+  0% { background-color: rgba(78, 84, 200, 0.8); }
+  50% { background-color: rgba(143, 148, 251, 0.8); }
+  100% { background-color: rgba(78, 84, 200, 0.8); }
+}
+
+/* Efeito de texto ao passar o mouse */
+h1:hover {
+  color: #f0db4f;
+  text-shadow: 0 0 20px rgba(240, 219, 79, 0.5);
+}
